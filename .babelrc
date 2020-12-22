@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "corejs": "3.8.1",
+          "useBuiltIns": "entry"
+        }
+      }
+    ]
+  ]
+}
