@@ -1,4 +1,7 @@
 {
   "app-name": "Mainteny",
-  "dashboard.navbar.students-title": "Students"
+  "dashboard.navbar.students-title": "Students",
+  "dashboard.title": "Dashboard",
+  "dashboard.jumbotron-heading": "Hello!",
+  "dashboard.jumbotron-body": "Thank you for reviewing my app. Please navigate to the <studentsLink>Students</studentsLink> page."
 }
