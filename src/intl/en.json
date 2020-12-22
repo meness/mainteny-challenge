@@ -3,5 +3,9 @@
   "dashboard.navbar.students-title": "Students",
   "dashboard.title": "Dashboard",
   "dashboard.jumbotron-heading": "Hello!",
-  "dashboard.jumbotron-body": "Thank you for reviewing my app. Please navigate to the <studentsLink>Students</studentsLink> page."
+  "dashboard.jumbotron-body": "Thank you for reviewing my app. Please navigate to the <studentsLink>Students</studentsLink> page.",
+  "students.toast.fetch-students-error": "Cannot fetch students",
+  "students.title": "Students",
+  "students.table.id-heading": "ID",
+  "students.table.name-heading": "Name"
 }
