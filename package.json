@@ -8,15 +8,23 @@
     "start": "next start"
   },
   "dependencies": {
+    "@formatjs/cli": "^2.13.16",
+    "@formatjs/intl-datetimeformat": "^3.2.1",
+    "@formatjs/intl-getcanonicallocales": "^1.5.3",
+    "@formatjs/intl-numberformat": "^6.1.1",
+    "@formatjs/intl-pluralrules": "^4.0.1",
+    "@formatjs/intl-relativetimeformat": "^8.0.1",
     "bootstrap": "^4.5.3",
     "next": "^10.0.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
+    "react-intl": "^5.10.9",
     "sass": "^1.30.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
+    "babel-plugin-react-intl": "^8.2.22",
     "core-js": "^3.8.1",
     "eslint": "^7.16.0",
     "eslint-plugin-react": "^7.21.5"
