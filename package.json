@@ -14,6 +14,7 @@
     "@formatjs/intl-numberformat": "^6.1.1",
     "@formatjs/intl-pluralrules": "^4.0.1",
     "@formatjs/intl-relativetimeformat": "^8.0.1",
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "next": "^10.0.3",
     "react": "^17.0.1",
