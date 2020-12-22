@@ -7,5 +7,17 @@
   "students.toast.fetch-students-error": "Cannot fetch students",
   "students.title": "Students",
   "students.table.id-heading": "ID",
-  "students.table.name-heading": "Name"
+  "students.table.name-heading": "Name",
+  "students.student.view.title": "View {studentName}'s Profile",
+  "students.student.view.profile-card-heading": "{studentName}'s Profile",
+  "students.student.view.courses-card-heading": "Courses",
+  "students.student.view.courses-card.table.course-name-heading": "Course Name",
+  "students.student.view.assign-new-course-title": "Assign New Course",
+  "students.student.view.assign-new-course.form.course-name-placeholder": "Course Name",
+  "students.student.view.assign-new-course-heading": "Assign New Course",
+  "students.student.view.assign-new-course.form.assign-title": "Assign",
+  "students.student.view.assign-new-course.form.cancel-title": "Cancel",
+  "students.student.view.toast.fetch-student-error": "Cannot fetch the student",
+  "students.student.assign-new-course.toast.assign-failed": "Cannot assign the course",
+  "students.student.assign-new-course.toast.assign-succeeded": "The course has been assigned to the student"
 }

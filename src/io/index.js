@@ -11,6 +11,18 @@ class IO {
 
     return res.data;
   }
+
+  /**
+   * Fetch the given student's profile.
+   *
+   * @param {string} studentId
+   * @returns {object} Given student's profile
+   */
+  async fetchStudentProfile(studentId) {
+    const res = await Axios.get(`/api/students/${studentId}`);
+
+    return res.data;
+  }
 }
 
 export default IO;

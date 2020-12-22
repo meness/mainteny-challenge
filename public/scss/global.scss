@@ -1,6 +1,31 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~react-toastify/dist/ReactToastify.css";
 
+.avatar {
+  width: 50px;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+  .avatar {
+    width: 60px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .avatar {
+    width: 70px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .avatar {
+    width: 80px;
+  }
 }
