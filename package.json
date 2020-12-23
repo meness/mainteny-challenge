@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node src/server/index.js",
     "build": "next build",
-    "start": "next start"
+    "start": "node src/server/index.js"
   },
   "dependencies": {
     "@emotion/react": "^11.1.2",
@@ -17,6 +17,7 @@
     "@formatjs/intl-relativetimeformat": "^8.0.1",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
     "next": "^10.0.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
