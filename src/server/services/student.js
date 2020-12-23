@@ -19,4 +19,14 @@ async function fetchStudentProfile(studentId) {
   return StudentModel.fetchStudentProfile(studentId);
 }
 
-module.exports = { listStudents, fetchStudentProfile };
+/**
+ * Update the given student's profile.
+ *
+ * @param {string} studentId Student ID
+ * @param {string} courseName New course name
+ */
+async function updateStudentProfile(studentId, courseName) {
+  return StudentModel.updateStudentProfile(studentId, courseName);
+}
+
+module.exports = { listStudents, fetchStudentProfile, updateStudentProfile };

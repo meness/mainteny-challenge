@@ -1,3 +1,5 @@
+const admin = require("firebase-admin");
+
 /**
  * Fetch students.
  *
@@ -29,4 +31,20 @@ async function fetchStudentProfile(studentId) {
   return student;
 }
 
-module.exports = { listStudents, fetchStudentProfile };
+/**
+ * Update the given student's profile.
+ *
+ * @param {string} studentId Student ID
+ * @param {string} courseName New course name
+ */
+async function updateStudentProfile(studentId, courseName) {
+  const result = await global.admin
+    .firestore()
+    .collection("students")
+    .doc(studentId)
+    .update({ courses: admin.firestore.FieldValue.arrayUnion(courseName) });
+
+  return result;
+}
+
+module.exports = { listStudents, fetchStudentProfile, updateStudentProfile };
