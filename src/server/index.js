@@ -1,6 +1,7 @@
 const express = require("express");
 const next = require("next");
 const loaders = require("./loaders");
+const studentsRoutes = require("./routes/students");
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== "production";
@@ -12,6 +13,10 @@ app.prepare().then(() => {
 
   // Initialize loaders first
   loaders.init(server);
+
+  // Handle API calls
+  server.use("/api", studentsRoutes);
+
   // Handle the rest of the routes natively
   server.all("*", (req, res) => {
     return handle(req, res);
