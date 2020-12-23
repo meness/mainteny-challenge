@@ -12,4 +12,21 @@ async function listStudents() {
   return students;
 }
 
-module.exports = { listStudents };
+/**
+ * Fetch the given student's profile.
+ *
+ * @param {string} studentId Student ID
+ * @returns {object} Given student's profile
+ */
+async function fetchStudentProfile(studentId) {
+  const studentSnapshot = await global.admin
+    .firestore()
+    .collection("students")
+    .doc(studentId)
+    .get();
+  const student = { id: studentSnapshot.id, ...studentSnapshot.data() };
+
+  return student;
+}
+
+module.exports = { listStudents, fetchStudentProfile };

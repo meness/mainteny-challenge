@@ -1,5 +1,5 @@
 const express = require("express");
-const { listStudents } = require("../services/student");
+const { listStudents, fetchStudentProfile } = require("../services/student");
 
 const router = express.Router();
 
@@ -15,7 +15,15 @@ router.get("/students", async (req, res) => {
 });
 
 // Fetch the given student's profile
-router.get("/students/:studentId", async (req, res) => {});
+router.get("/students/:studentId", async (req, res) => {
+  try {
+    const student = await fetchStudentProfile(req.params.studentId);
+
+    res.status(200).json(student);
+  } catch (err) {
+    res.status(500).end(err.message);
+  }
+});
 
 // Update the given student's profile
 router.put("/students/:studentId", async (req, res) => {});
