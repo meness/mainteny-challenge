@@ -1,5 +1,6 @@
 const express = require("express");
 const next = require("next");
+const loaders = require("./loaders");
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== "production";
@@ -9,6 +10,8 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
+  // Initialize loaders first
+  loaders.init(server);
   // Handle the rest of the routes natively
   server.all("*", (req, res) => {
     return handle(req, res);
