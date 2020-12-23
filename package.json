@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node src/server/index.js",
+    "dev": "nodemon src/server/index.js",
     "build": "next build",
     "start": "node src/server/index.js"
   },
@@ -34,6 +34,7 @@
     "babel-plugin-react-intl": "^8.2.22",
     "core-js": "^3.8.1",
     "eslint": "^7.16.0",
-    "eslint-plugin-react": "^7.21.5"
+    "eslint-plugin-react": "^7.21.5",
+    "nodemon": "^2.0.6"
   }
 }
