@@ -1,3 +1,4 @@
+const firebaseLoader = require("./firebase");
 const expressLoader = require("./express");
 
 /**
@@ -7,4 +8,5 @@ const expressLoader = require("./express");
  */
 exports.init = (server) => {
   expressLoader(server);
+  firebaseLoader();
 };
