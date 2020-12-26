@@ -9,7 +9,7 @@ Welcome to my solution to Mainteny Challenge.
 - [x] Using best practices
 - [x] Documentation
 - [x] Easy to use
-- [ ] Tests and coverage
+- [x] Tests and coverage
 - [x] Application is responsive on mobile devices
 - [ ] Authentication for the APIs
 
@@ -43,7 +43,7 @@ Run `docker-compose up` and open `http://localhost:3000` in your browser.
 ## Todo
 - [ ] Authentication for the APIs
 - [ ] Protect the dashboard pages
-- [ ] Write tests
+- [ ] Write more tests
 
 ## Thanks To
 These awesome libraries helped me build this project.
