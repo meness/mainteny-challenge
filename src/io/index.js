@@ -7,7 +7,7 @@ class IO {
    * @returns {object[]} List of students
    */
   async listStudents() {
-    const res = await Axios.get("/api/students");
+    const res = await Axios.get("http://localhost:3000/api/students");
 
     return res.data;
   }
@@ -19,7 +19,7 @@ class IO {
    * @returns {object} Given student's profile
    */
   async fetchStudentProfile(studentId) {
-    const res = await Axios.get(`/api/students/${studentId}`);
+    const res = await Axios.get(`http://localhost:3000/api/students/${studentId}`);
 
     return res.data;
   }
