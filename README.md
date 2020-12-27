@@ -46,10 +46,12 @@ Run `docker-compose up` and open `http://localhost:3000` in your browser.
 - [ ] Write more tests
 
 ## Thanks To
-These awesome libraries helped me build this project.
+These awesome packages helped me build this project.
 - [Emotion](https://github.com/emotion-js/emotion)
 - [React Spinners](https://github.com/davidhu2000/react-spinners)
 - [React Toastify](https://github.com/fkhadra/react-toastify)
+- [Nodemon](https://github.com/remy/nodemon)
+- [Axios](https://github.com/axios/axios)
 
 ## License
 Distributed under the MIT License. See [LICENSE.txt](https://github.com/meness/mainteny-challenge/blob/master/LICENSE.txt) for more information.
