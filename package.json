@@ -9,11 +9,6 @@
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
-  "nodemonConfig": {
-    "ignore": [
-      "__tests__/*"
-    ]
-  },
   "dependencies": {
     "@emotion/react": "^11.1.2",
     "@formatjs/cli": "^2.13.16",
